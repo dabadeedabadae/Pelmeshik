@@ -13,7 +13,7 @@ logo_path = os.path.join(os.path.dirname(__file__), "img", "sparkling-line.svg")
 st.set_page_config(initial_sidebar_state="collapsed", page_icon=image)
 
 
-pages = ['Home', 'Project1', 'Project2', 'Project3']
+pages = [" ",'Home', 'Project1', 'Project2', 'Project3']
 styles = {
     "nav": {
         "background-color": "linear-gradient(to right, royalblue, rgb(123, 209, 146))",

@@ -45,7 +45,7 @@ styles = {
 
 
 
-page = st_navbar(pages, styles=styles, logo_page=logo_path, options=options)
+page = st_navbar(pages, styles=styles, logo_path=logo_path, options=options)
 
 if page == 'Home':
     Home.Home().app()

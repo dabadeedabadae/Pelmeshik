@@ -1,30 +1,44 @@
 import streamlit as st
 from Pages import Home, Project1, Project2, Project3
 from streamlit_navigation_bar import st_navbar
+from PIL import Image
 
-st.set_page_config(initial_sidebar_state="collapsed")
+image = Image.open('/Users/elnurayagan/PycharmProjects/pythonProject2/img/sparkling-line.png')
+
+
+st.set_page_config(initial_sidebar_state="collapsed", page_icon=image)
 
 pages = ['Home', 'Project1', 'Project2', 'Project3']
 styles = {
     "nav": {
-        "background-color": "rgb(123, 209, 146)",
+        "background-color": "linear-gradient(to right, royalblue, rgb(123, 209, 146))",
+        "display": "flex",
+        "justify-content": "center",
     },
-    "div": {
-        "max-width": "32rem",
+    "img": {
+        "position": "absolute",
+        "left": "-20px",
+        "font-size": "15px",
+        "top": "4px",
+        "width": "100px",
+        "height": "40px",
     },
     "span": {
-        "border-radius": "0,5rem",
-        "color": "rgb(49, 51, 63)",
-        "margin": "0 0.125rem",
-        "padding": "0.4275rem 0.625rem",
+        "display": "block",
+        "color": "white",
+        "padding": "0.2rem 0.725rem",
+        "font-size": "14px",
     },
     "active": {
-        "background-color": "rgba(105, 114, 255, 0.25)",
+        "background-color": "white",
+        "color": "black",
+        "font-weight": "normal",
+        "padding": "14px",
     },
-    "hover": {
-        "background-color": "rgba(255, 255, 255, 0.35)",
-    }
 }
+
+
+
 
 page = st_navbar(pages, styles=styles)
 

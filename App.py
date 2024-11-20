@@ -1,12 +1,17 @@
+import os
+
 import streamlit as st
+from streamlit_navigation_bar.example import logo_path, options
+
 from Pages import Home, Project1, Project2, Project3
 from streamlit_navigation_bar import st_navbar
 from PIL import Image
 
-image = Image.open('img/sparkling-line.svg')
+image = Image.open('img/sparkling-line.png')
 
-
+logo_path = os.path.join(os.path.dirname(__file__),"img", "sparkling-line.svg")
 st.set_page_config(initial_sidebar_state="collapsed", page_icon=image)
+
 
 pages = ['Home', 'Project1', 'Project2', 'Project3']
 styles = {
@@ -40,7 +45,7 @@ styles = {
 
 
 
-page = st_navbar(pages, styles=styles)
+page = st_navbar(pages, styles=styles, logo_page=logo_path, options=options)
 
 if page == 'Home':
     Home.Home().app()

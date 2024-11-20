@@ -6,7 +6,11 @@ from streamlit_navigation_bar import st_navbar
 import os
 from PIL import Image
 
-st.set_page_config(initial_sidebar_state="collapsed", page_title="My App", page_icon=image)
+st.set_page_config(
+    initial_sidebar_state="collapsed",
+    page_title="My App",
+    page_icon="img/sparkling-line.png"
+)
 
 
 image = Image.open('img/sparkling-line.png')

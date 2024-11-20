@@ -9,7 +9,7 @@ from PIL import Image
 
 image = Image.open('img/sparkling-line.png')
 
-logo_path = os.path.join(os.path.dirname(__file__),"img", "sparkling-line.svg")
+logo_path = os.path.join(os.path.dirname(__file__), "img", "sparkling-line.svg")
 st.set_page_config(initial_sidebar_state="collapsed", page_icon=image)
 
 

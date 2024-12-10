@@ -1,6 +1,4 @@
 import streamlit as st
-from streamlit import image
-
 from Pages import Home, Project1, Project2, Project3
 from streamlit_navigation_bar import st_navbar
 import os
@@ -63,7 +61,6 @@ elif page == "Project3":
     Project3.Project3().app()
 else:
     Home.Home().app()
-
 
 
 

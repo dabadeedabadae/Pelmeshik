@@ -8,10 +8,6 @@ from numpy.lib.utils import source
 from yt_dlp import YoutubeDL
 from streamlit_webrtc import webrtc_streamer, WebRtcMode
 
-
-
-
-
 class Project2:
     def __int__(self):
         self.cap = None
@@ -83,7 +79,4 @@ class Project2:
                         break
                 self.cap.release()
                 cv2.destroyAllWindows()
-app = Project2()
-app.app()
-
 

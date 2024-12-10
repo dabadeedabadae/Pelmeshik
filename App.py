@@ -11,6 +11,7 @@ st.set_page_config(
 )
 
 
+
 image = Image.open('img/sparkling-line.png')
 logo_path = os.path.join(os.path.dirname(__file__), "img", "sparkling-line.svg")
 
